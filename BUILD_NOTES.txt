@@ -1,0 +1,17 @@
+﻿GitToolboxVN v1.3 - Build notes
+================================
+
+Cách build nhanh:
+  BUILD.cmd
+
+BUILD.cmd tự:
+- dùng cl.exe nếu đã có trong PATH;
+- nếu chưa có, gọi vswhere.exe để tìm Visual Studio / Build Tools rồi nạp VsDevCmd.bat -arch=x64;
+- fallback sang MinGW-w64 g++.exe nếu có trong PATH.
+
+MSVC dùng /utf-8 và /MT.
+MinGW dùng -finput-charset=UTF-8.
+
+V1.3 không cần thư viện ngoài ngoài Win32 API và git.exe lúc chạy.
+Sau khi build thành công, file cần chạy là:
+  GitToolboxVN.exe
