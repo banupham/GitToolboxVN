@@ -1,0 +1,14 @@
+﻿GitToolboxVN v1.3
+=================
+- Tổng cộng 156 thao tác Git.
+- Thêm "Xóa nhiều branch remote" bằng hộp chọn nhiều.
+- Sinh một lệnh git push origin --delete <branch1> <branch2> ...
+- Có nút Chọn tất cả / Bỏ chọn trong hộp xóa nhiều.
+- Tự phát hiện branch mặc định origin qua refs/remotes/origin/HEAD và bảo vệ branch đó.
+- Nếu không đọc được default branch thì bảo vệ main.
+- Thêm đúng lệnh git fetch --prune.
+- Vẫn giữ git fetch --all --prune và git remote prune origin.
+- Cache riêng danh sách branch origin trong RAM.
+- Dropdown "Tên branch remote" dùng danh sách branch origin.
+- Giữ cache branch/remote/commit/tag/stash/file và tự refresh của v1.2.
+- Giữ fix UTF-8 và BUILD.cmd tự tìm Visual Studio Build Tools.
